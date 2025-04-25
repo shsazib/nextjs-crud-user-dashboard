@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-export const api = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com'
-});
+export const api = axios.create({ baseURL: 'https://jsonplaceholder.typicode.com' });
 
 export const getUsers    = () => api.get('/users');
 export const createUser  = data => api.post('/users', data);
